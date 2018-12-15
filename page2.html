@@ -17,7 +17,7 @@
 			
 			
 			
-		<h2>The assessment </h2>
+		<h2> <span style="text-decoration: underline;">The Assessment </span </h2>
 			<p>Firstly, in order to view my code, make sure your computer is able to read python scripts. I have used "Anaconda" a free open source platform which enables python and R distribtuion. It includes over 100 Python libraries, and "Spyder", the core software for cross platform scienctific programming and manipulation. 
 			</p>
 			<p> This can be downloaded free at: <p><a title="Anaconda download" href="https://www.anaconda.com/download/">https://www.anaconda.com/download/</a></p></p>
@@ -25,7 +25,7 @@
 
 			
 		
-		<p>The code in which I have created, in its simplest description, creates 10 agents (which we are going to call sheep), and randomly places them within our environment, (provided by the univeristy as a simple text file) which we read in using "csv.reader".	The sheep are randomly placed into the environment, and randomly move around the area consuming grass (data).
+		<p>The code in which I have created, in its simplest description, creates 10 agents (which we are going to call sheep), and randomly places them within our environment (provided by the univeristy as a simple text file), which we read in using "csv.reader".	The sheep are randomly placed into the environment, and randomly move around the area consuming grass (data).
 		</p>
 		
 			<h3> The Environment</h3>
@@ -33,15 +33,32 @@
 			
 			
 			
+		<p> Above is the envionment plotted by matplotlib, using "matplotlib.pyplot.imshow(environment)"
+		
+		
+		
+		
+			<h4> The Environment with Sheep </h4>
+			<p><img src="Environmentsheep.png" alt="Sheep" width="460" height="345" </p>
 			
 			
+		<p> Using matplotlibs scatter diagram function "matplotlib.pyplot.scatter(agents[i]._x,agents[i]._y)" we can now plot our sheep (agents) into our environment. 
 			
 			
 		
+			<h5> Final animation </h5> 
+				<p><img src="Animationfin.png" alt="Fin" width="460" height="345" </p>
+				
+				
+				
+			
 		
-		<p>This process can be put into animation using "matplotlib.animation". The sheep will stop grazing when a value of "0.01" has been found, this can easily be changed, see line 77 in the "Animation11.py" file.
+		<p>The grazing process can be put into animation using "matplotlib.animation". The sheep will stop grazing when a value of "0.01" has been found, (this can easily be changed, see line 77 in the "Animation11.py" file)
+		The darkened areas surrounding the agents are the areas which have been "eaten" or grazed. This is the current extent as to what this code can do. In the future I may implement breeding of the sheep, and possibly wolves which will come in and attack the sheep too. 
 		</p>
 		
+		</p> IMPORTANT: If the animation fails to load, please type "%matplotlib qt" into the console, like so: 
+		<img src="qt.png" alt="work" width="460" height="345" </p>
 		
 			
 			
